@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jiangsu Provincial Scholarship Defense · Jubair Md Ariful Islam 王子</title>
+<meta name="description" content="Category A scholarship defense, Huai'an University School of International Education">
+<style>
+:root{--ink:#14110f;--card:#221c18;--line:#3a312a;--red:#c8322b;--gold:#e0b25a;--text:#f7f1e8;--muted:#b9aea0;
+--head:Cambria,"Noto Serif","Songti SC","Source Han Serif SC",Georgia,serif;--body:Calibri,"Segoe UI","Noto Sans","PingFang SC","Microsoft YaHei",system-ui,sans-serif;--cjk:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC","Noto Sans SC",sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%;background:#0b0908;overflow:hidden;font-family:var(--body);color:var(--text)}
+#stage{position:absolute;left:50%;top:50%;width:1920px;height:1080px;transform-origin:center;background:var(--ink);overflow:hidden}
+.slide{position:absolute;inset:0;padding:80px 90px;opacity:0;visibility:hidden;transition:opacity .7s ease,visibility .7s;}
+.slide.active{opacity:1;visibility:visible}
+.slide::before{content:attr(data-ghost);position:absolute;right:-40px;bottom:-200px;font:900 900px/1 var(--cjk);color:#fff;opacity:.025;pointer-events:none}
+/* entrance animation: any [data-a] animates when slide becomes active */
+[data-a]{opacity:0;transform:translateY(40px)}
+.active [data-a]{animation:rise .9s cubic-bezier(.2,.7,.2,1) forwards;animation-delay:calc(var(--d,0)*.12s + .25s)}
+.active [data-a=left]{animation-name:fromL}.active [data-a=right]{animation-name:fromR}.active [data-a=zoom]{animation-name:zoom}
+@keyframes rise{to{opacity:1;transform:none}}
+@keyframes fromL{from{transform:translateX(-80px)}to{opacity:1;transform:none}}
+@keyframes fromR{from{transform:translateX(80px)}to{opacity:1;transform:none}}
+@keyframes zoom{from{transform:scale(.9)}to{opacity:1;transform:none}}
+/* frame */
+.seal{display:grid;place-items:center;width:84px;height:84px;border-radius:10px;background:var(--red);font:700 52px var(--cjk);color:#fff;box-shadow:0 10px 30px #c8322b55}
+.top{display:flex;align-items:center;gap:26px;height:84px}
+.kick{font-weight:700;letter-spacing:.2em;font-size:22px;color:var(--gold);text-transform:uppercase}
+h2{font:700 66px/1.1 var(--head);margin:34px 0 34px}
+.foot{position:absolute;left:90px;right:90px;bottom:34px;display:flex;justify-content:space-between;font-size:18px;color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:34px}
+.card.red{background:var(--red);border-color:var(--red)}
+.ph{position:relative;overflow:hidden;border:2px solid var(--gold);background:#000}
+.ph img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.04);transition:transform 12s ease-out}
+.active .ph img{transform:scale(1.14)}
+.gold{color:var(--gold)}.muted{color:var(--muted)}
+.disc{width:84px;height:84px;border-radius:50%;background:var(--red);display:grid;place-items:center;font:700 40px var(--cjk);flex:none}
+.row{display:flex;align-items:center;gap:26px}
+.row b{display:block;font:700 34px var(--head)}.row span{font-size:25px;color:var(--muted)}
+.eyebrow{font-weight:700;letter-spacing:.2em;font-size:20px;color:var(--gold);margin-bottom:12px}
+.pill{display:inline-block;background:var(--red);padding:8px 28px;border-radius:30px;font-weight:700;letter-spacing:.18em;font-size:20px}
+.cap{font-size:21px;font-style:italic;color:var(--muted);margin-top:12px}
+ul.b{list-style:none;font-size:30px;line-height:1.5}ul.b li::before{content:"";display:inline-block;width:11px;height:11px;border-radius:50%;background:var(--red);margin-right:18px}
+/* title slide */
+#s1 .pic{position:absolute;right:0;top:0;width:785px;height:1080px;border:0}
+#s1 .pic::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--ink),transparent 28%)}
+#s1 .cjk{font:900 210px/1 var(--cjk);color:var(--gold);margin-top:80px;letter-spacing:.04em;text-shadow:0 0 60px #e0b25a40}
+#s1 h1{font:700 100px/1.1 var(--head)}
+#s1 .sub{font-size:34px;font-style:italic;color:var(--muted);margin:26px 0 56px;max-width:1000px}
+#s1 .name{font-size:44px;font-weight:700}#s1 .meta{font-size:28px;color:var(--muted);margin-top:8px;line-height:1.5}
+/* glance */
+.three{display:grid;grid-template-columns:repeat(3,1fr);gap:50px;margin-top:20px}
+.three .card{height:720px}
+.big{font:700 96px/1 var(--head);margin:40px 0 36px}
+/* B->A */
+.path{display:flex;align-items:center;gap:40px;margin-bottom:56px}
+.path .card{width:520px}.path .n{font:700 64px var(--head)}
+.arrow{flex:1;text-align:center;font-weight:700;font-size:26px;color:var(--gold)}
+.arrow i{display:block;height:14px;margin-top:12px;background:var(--gold);border-radius:8px;transform-origin:left;transform:scaleX(0);position:relative}
+.active .arrow i{animation:grow 1.4s .9s ease forwards}.arrow i::after{content:"";position:absolute;right:-10px;top:-13px;border:20px solid transparent;border-left:30px solid var(--gold);border-right:0}
+@keyframes grow{to{transform:scaleX(1)}}
+.how{display:grid;grid-template-columns:repeat(4,1fr);gap:40px}.how .card{height:330px}.how h3{font:700 36px var(--head);margin:22px 0 10px}.how p{font-size:25px;color:var(--muted)}
+/* hsk */
+.two{display:grid;grid-template-columns:1fr 820px;gap:70px;align-items:start}
+.score{font:700 240px/1 var(--head);color:var(--gold)}.score small{font-size:90px;color:var(--muted);font-weight:400}
+.bars .r{display:grid;grid-template-columns:170px 1fr 70px;align-items:center;gap:20px;font-size:28px;margin:18px 0}
+.bars .t{height:34px;background:#2e2620;border-radius:10px;overflow:hidden}.bars .f{height:100%;width:0;background:var(--red);border-radius:10px}
+.active .bars .f{animation:fill 1.6s cubic-bezier(.2,.8,.2,1) forwards;animation-delay:calc(var(--d)*.2s + 1s)}
+@keyframes fill{to{width:var(--w)}}
+/* research */
+.res{display:grid;grid-template-columns:1.1fr 1fr;gap:70px}
+.res h3{font:700 54px/1.2 var(--head);margin:34px 0 24px}
+/* generic photo grids */
+.fix{position:absolute}
+/* timeline */
+.tl{display:grid;grid-template-columns:repeat(4,1fr);gap:30px}
+.tl .card{height:210px;padding:26px 30px;display:flex;flex-direction:column;justify-content:center}
+.tl .card.hi{background:var(--red);border-color:var(--red)}.tl small{font-weight:700;letter-spacing:.15em;font-size:20px;color:var(--gold);margin-bottom:10px}.tl .hi small{color:#ffe9d6}.tl div{font-size:28px;line-height:1.3}
+/* closing */
+#s11 .cjk{font:900 190px/1.1 var(--cjk);color:var(--gold);margin:20px 0 0}
+#s11 h2{margin:0 0 40px}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}.pillars .card{height:330px}.pillars b{font:700 40px var(--head)}.pillars p{font-size:25px;color:var(--muted);margin-top:22px;line-height:1.4}
+/* UI */
+#bar{position:fixed;left:0;bottom:0;height:5px;background:var(--gold);width:0;transition:width .5s;z-index:9}
+#hud{position:fixed;right:18px;bottom:14px;z-index:9;display:flex;gap:8px;opacity:0;transition:opacity .3s}
+body:hover #hud{opacity:.85}
+#hud button{background:#221c18cc;color:var(--text);border:1px solid var(--line);border-radius:10px;padding:8px 14px;font:600 14px var(--body);cursor:pointer}
+#notes{position:fixed;left:0;right:0;bottom:0;background:#000e;color:var(--text);padding:18px 40px 26px;font-size:20px;line-height:1.5;display:none;z-index:8;border-top:2px solid var(--gold)}
+#notes.on{display:block}
+@media print{html,body{overflow:visible;height:auto}#stage{position:static;transform:none!important;width:1920px;height:auto}.slide{position:relative;height:1080px;opacity:1;visibility:visible;page-break-after:always}[data-a]{opacity:1;transform:none}.bars .f{width:var(--w)}#hud,#bar,#notes{display:none}@page{size:1920px 1080px;margin:0}}
+@media (prefers-reduced-motion:reduce){.active [data-a]{animation-duration:.01s!important;animation-delay:0s!important}.ph img{transition:none!important;transform:none!important}}
+</style>
+</head>
+<body>
+<div id="stage">
+
+<!-- 1 TITLE -->
+<section class="slide" id="s1" data-ghost="王">
+  <div class="ph pic" data-a="left" style="--d:0"><img src="assets/img/cal_title.jpg" alt="Jubair holding his calligraphy 自强不息"></div>
+  <div class="top" data-a style="--d:0"><div class="seal">王</div><div class="kick">Jiangsu Scholarship · Category A Defense</div></div>
+  <div class="cjk" data-a style="--d:1">自强不息</div>
+  <h1 data-a style="--d:2">Strive Without Rest</h1>
+  <p class="sub" data-a style="--d:3">Ink, voice and service: a Bangladeshi scholar's year at Huai'an University</p>
+  <div data-a style="--d:4"><div class="name">Jubair Md Ariful Islam · 王子</div>
+  <div class="meta">Master's candidate, International Business · Class GMIB2501<br>School of International Education, Huai'an University</div></div>
+</section>
+
+<!-- 2 GLANCE -->
+<section class="slide" data-ghost="年">
+  <div class="top" data-a><div class="seal">年</div><div class="kick">My year at a glance</div></div>
+  <h2 data-a style="--d:1">Scholar. Artist. Host and helper.</h2>
+  <div class="three">
+    <div class="card" data-a style="--d:2"><div class="row"><div class="seal" style="width:70px;height:70px;font-size:42px">学</div><div class="kick" style="font-size:20px">Academic</div></div>
+      <div class="big"><span data-count="B → A" data-plain>B → A</span></div>
+      <ul class="b"><li>Category B → Category A</li><li>Highest marks in my major</li><li>HSK 3 · 250 / 300</li></ul></div>
+    <div class="card" data-a style="--d:3"><div class="row"><div class="seal" style="width:70px;height:70px;font-size:42px">艺</div><div class="kick" style="font-size:20px">Accomplishments</div></div>
+      <div class="big" style="font-size:80px">Provincial</div>
+      <ul class="b"><li>Calligraphy award, Jiangsu</li><li>Research paper under review</li><li>Still practising the brush</li></ul></div>
+    <div class="card" data-a style="--d:4"><div class="row"><div class="seal" style="width:70px;height:70px;font-size:42px">行</div><div class="kick" style="font-size:20px">Activities</div></div>
+      <div class="big" style="font-size:66px">Service Award</div>
+      <ul class="b"><li>Hosted Chinese festivals</li><li>Assisted SIE on admission day</li><li>Class monitor · Student Council VP</li></ul></div>
+  </div>
+</section>
+
+<!-- 3 B -> A -->
+<section class="slide" data-ghost="学">
+  <div class="top" data-a><div class="seal">学</div><div class="kick">1 · Academic achievements</div></div>
+  <h2 data-a style="--d:1">From Category B to Category A</h2>
+  <div class="path" data-a style="--d:2">
+    <div class="card"><div class="eyebrow muted">Year 1 · Awarded</div><div class="n">Category B</div></div>
+    <div class="arrow">Annual Review · 年度考核<i></i></div>
+    <div class="card red"><div class="eyebrow" style="color:#ffe9d6">The University awarded</div><div class="n">Category A</div></div>
+  </div>
+  <div class="eyebrow" data-a style="--d:3">HOW I EARNED IT</div>
+  <div class="how">
+    <div class="card" data-a="zoom" style="--d:4"><div class="disc">✓</div><h3>Top marks</h3><p>Highest marks in my major's department</p></div>
+    <div class="card" data-a="zoom" style="--d:5"><div class="disc">师</div><h3>Helped teachers</h3><p>Supported staff, including on 2026 admission day</p></div>
+    <div class="card" data-a="zoom" style="--d:6"><div class="disc">助</div><h3>Volunteered</h3><p>Took part in university programs and events</p></div>
+    <div class="card" data-a="zoom" style="--d:7"><div class="disc">主</div><h3>Hosted events</h3><p>Hosted Chinese events, incl. the Mid-Autumn Festival</p></div>
+  </div>
+</section>
+
+<!-- 4 HSK -->
+<section class="slide" data-ghost="语">
+  <div class="top" data-a><div class="seal">语</div><div class="kick">1 · Academic achievements</div></div>
+  <h2 data-a style="--d:1">HSK 3 within a year</h2>
+  <div class="two">
+    <div data-a style="--d:2">
+      <div class="score"><span data-count="250">250</span><small> / 300</small></div>
+      <p style="font-size:30px;margin:10px 0 40px">HSK Level 3 total score · pass mark 180 · tested 16 May 2026</p>
+      <ul class="b"><li>Listening 95 and Reading 94: top-tier results</li><li>Used every day: in class, on stage, in service</li><li>Writing (61) is my next target</li></ul>
+    </div>
+    <div>
+      <div class="ph" data-a="right" style="--d:2;height:455px"><img src="assets/img/hsk_scores.jpg" alt="HSK 3 score report excerpt"></div>
+      <div class="bars" style="margin-top:34px">
+        <div class="r" data-a style="--d:4"><span>Listening</span><div class="t"><div class="f" style="--w:95%;--d:0"></div></div><b>95</b></div>
+        <div class="r" data-a style="--d:5"><span>Reading</span><div class="t"><div class="f" style="--w:94%;--d:1"></div></div><b>94</b></div>
+        <div class="r" data-a style="--d:6"><span>Writing</span><div class="t"><div class="f" style="--w:61%;--d:2"></div></div><b>61</b></div>
+        <div class="r" data-a style="--d:7"><span>Speaking*</span><div class="t"><div class="f" style="--w:70%;--d:3"></div></div><b>70</b></div>
+      </div>
+      <div class="cap">*Speaking taken at Elementary level (pass mark 60)</div>
+    </div>
+  </div>
+</section>
+
+<!-- 5 RESEARCH -->
+<section class="slide" data-ghost="研">
+  <div class="top" data-a><div class="seal">研</div><div class="kick">2 · Research &amp; accomplishments</div></div>
+  <h2 data-a style="--d:1">Research beyond the classroom</h2>
+  <div class="res">
+    <div class="card" style="height:650px;padding:50px" data-a="left" style="--d:2">
+      <span class="pill">UNDER PEER REVIEW</span>
+      <h3>Chinese Mining Foreign Direct Investment in Zambia, 2000–2024</h3>
+      <p class="gold" style="font:30px var(--cjk)">中国在赞比亚采矿业的外国直接投资（2000—2024）</p>
+      <p class="cap" style="font-size:25px;margin-top:40px">Submitted to International Studies of Economics · completed original research · not yet published</p>
+    </div>
+    <div>
+      <div class="eyebrow" data-a style="--d:2">WHAT THE PAPER EXAMINES</div>
+      <div class="row" data-a="right" style="--d:3;margin:34px 0"><div class="disc">周</div><div><b>Commodity cycles</b><span>How price swings shape investment</span></div></div>
+      <div class="row" data-a="right" style="--d:4;margin:34px 0"><div class="disc">路</div><div><b>Belt and Road effects</b><span>The influence of the BRI</span></div></div>
+      <div class="row" data-a="right" style="--d:5;margin:34px 0"><div class="disc">制</div><div><b>Institutional determinants</b><span>Rules and governance that attract capital</span></div></div>
+      <div class="row" data-a="right" style="--d:6;margin:34px 0"><div class="disc">转</div><div><b>From state-owned to private</b><span>The shift in who invests</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- 6 CALLIGRAPHY -->
+<section class="slide" data-ghost="书">
+  <div class="top" data-a><div class="seal">艺</div><div class="kick">2 · Accomplishments · Ink</div></div>
+  <h2 data-a style="--d:1">Provincial calligraphy award · 书法</h2>
+  <div class="ph fix" data-a="zoom" style="--d:2;left:90px;top:330px;width:500px;height:667px"><img src="assets/img/cert_award.jpg" alt="Honor certificate"></div>
+  <div class="ph fix" data-a style="--d:3;left:640px;top:330px;width:665px;height:374px"><img src="assets/img/ceremony.jpg" alt="Award ceremony"></div>
+  <div class="fix" data-a style="--d:4;left:640px;top:735px;width:665px">
+    <div class="gold" style="font:700 32px var(--head)">优秀书法作品 · Excellent Calligraphy Work</div>
+    <p style="font-size:26px;line-height:1.45;margin-top:12px">Jiangsu 2025 “Read Jiangsu” contest for international students. My piece: 《留子读“苏”》. Issued by the Jiangsu Higher Education Association.</p></div>
+  <div class="ph fix" data-a="zoom" style="--d:5;left:1355px;top:330px;width:475px;height:667px"><img src="assets/img/cal_brush.jpg" alt="Jubair with his brush calligraphy"></div>
+</section>
+
+<!-- 7 HOSTING -->
+<section class="slide" data-ghost="主">
+  <div class="top" data-a><div class="seal">主</div><div class="kick">3 · Activities · Voice</div></div>
+  <h2 data-a style="--d:1">A voice for Chinese celebrations</h2>
+  <div class="ph fix" data-a="left" style="--d:2;left:90px;top:330px;width:900px;height:600px"><img src="assets/img/host_hero.jpg" alt="Co-hosting the Mid-Autumn Festival"></div>
+  <div class="cap fix" data-a style="--d:3;left:90px;top:945px">Co-hosting the Mid-Autumn Festival, 29 Sep 2025</div>
+  <div class="ph fix" data-a="zoom" style="--d:3;left:1040px;top:330px;width:390px;height:390px"><img src="assets/img/host_stage.jpg" alt="Hosting on stage"></div>
+  <div class="ph fix" data-a="zoom" style="--d:4;left:1440px;top:330px;width:390px;height:390px"><img src="assets/img/host_fu.jpg" alt="New Year with the 福 character"></div>
+  <ul class="b fix" data-a style="--d:5;left:1040px;top:760px;width:790px"><li>Mid-Autumn Festival host</li><li>Hosted Chinese cultural events</li><li>New Year, 29 Dec 2025: my own 福</li></ul>
+</section>
+
+<!-- 8 SERVICE -->
+<section class="slide" data-ghost="服">
+  <div class="top" data-a><div class="seal">服</div><div class="kick">3 · Activities · Service</div></div>
+  <h2 data-a style="--d:1">Service that earned an award</h2>
+  <div class="ph fix" data-a="left" style="--d:2;left:90px;top:330px;width:1000px;height:667px"><img src="assets/img/admission.jpg" alt="SIE volunteers at the admission-day help desk"></div>
+  <div class="card red fix row" data-a="right" style="--d:3;left:1150px;top:330px;width:680px;height:190px;padding:30px"><div style="font-size:70px">🏆</div><div><div class="eyebrow" style="color:#ffe9d6;margin:0">SERVICE AWARD</div><div style="font:700 30px/1.25 var(--body)">For assisting the School of International Education</div></div></div>
+  <div class="fix" style="left:1150px;top:570px;width:680px">
+    <div class="row" data-a="right" style="--d:4;margin-bottom:44px"><div class="disc">✓</div><div><b>Made check-in easier</b><span>A smoother day for new students</span></div></div>
+    <div class="row" data-a="right" style="--d:5;margin-bottom:44px"><div class="disc">导</div><div><b>Guided every step</b><span>Walked them through the processes</span></div></div>
+    <div class="row" data-a="right" style="--d:6"><div class="disc">师</div><div><b>Supported teachers</b><span>Worked with staff and the SIE team</span></div></div>
+  </div>
+</section>
+
+<!-- 9 BRIDGE -->
+<section class="slide" data-ghost="桥">
+  <div class="top" data-a><div class="seal">桥</div><div class="kick">3 · Activities · Bridge</div></div>
+  <h2 data-a style="--d:1">Bridging languages and cultures</h2>
+  <div class="ph fix" data-a="left" style="--d:2;left:90px;top:330px;width:780px;height:585px"><img src="assets/img/english.jpg" alt="Helping Chinese students with spoken English"></div>
+  <div class="ph fix" data-a="zoom" style="--d:3;left:910px;top:330px;width:330px;height:585px"><img src="assets/img/culture.jpg" alt="Helping international students understand Chinese culture"></div>
+  <div class="cap fix" data-a style="--d:4;left:90px;top:935px">Volunteer English-speaking help · helping international students explore China</div>
+  <div class="fix" style="left:1300px;top:330px;width:530px">
+    <div data-a="right" style="--d:4"><div class="row"><div class="disc">言</div><b style="font:700 34px var(--head)">Spoken English, made easier</b></div>
+      <p style="font-size:27px;color:var(--muted);margin:22px 0 60px;line-height:1.45">Helped Chinese students improve their English speaking in a simpler way, and it worked.</p></div>
+    <div data-a="right" style="--d:5"><div class="row"><div class="disc">华</div><b style="font:700 34px var(--head)">Understanding China</b></div>
+      <p style="font-size:27px;color:var(--muted);margin-top:22px;line-height:1.45">Helped international students understand the culture of China.</p></div>
+  </div>
+</section>
+
+<!-- 10 TIMELINE -->
+<section class="slide" data-ghost="年">
+  <div class="top" data-a><div class="seal">年</div><div class="kick">3 · Activities · The year</div></div>
+  <h2 data-a style="--d:1">One year, many stops</h2>
+  <div class="tl">
+    <div class="card" data-a style="--d:2"><small>JUL 2025</small><div>Class monitor, International Business</div></div>
+    <div class="card" data-a style="--d:3"><small>29 SEP 2025</small><div>Hosted the Mid-Autumn Festival</div></div>
+    <div class="card" data-a style="--d:4"><small>3 NOV</small><div>Chinese chess class</div></div>
+    <div class="card" data-a style="--d:5"><small>8 NOV</small><div>High-speed rail seminar</div></div>
+    <div class="card" data-a style="--d:6"><small>13 NOV</small><div>Volunteered, English language club</div></div>
+    <div class="card" data-a style="--d:7"><small>NOV 2025</small><div>Elected VP, Student Council Academic Dept.</div></div>
+    <div class="card" data-a style="--d:8"><small>15 DEC</small><div>Study tour, Zhou Enlai Memorial Hall</div></div>
+    <div class="card hi" data-a style="--d:9"><small>29 DEC</small><div>Jiangsu calligraphy award · New Year celebration</div></div>
+    <div class="card" data-a style="--d:10"><small>12 APR 2026</small><div>Volunteer, Huai'an Marathon</div></div>
+    <div class="card" data-a style="--d:11"><small>9 MAY</small><div>Calligraphy class at SIE</div></div>
+    <div class="card hi" data-a style="--d:12"><small>16 MAY</small><div>Passed HSK 3 · 250 / 300</div></div>
+    <div class="card hi" data-a style="--d:13"><small>2026</small><div>Admission-day helper · Service Award</div></div>
+  </div>
+</section>
+
+<!-- 11 CLOSING -->
+<section class="slide" id="s11" data-ghost="谢">
+  <div class="top" data-a><div class="seal">谢</div><div class="kick">Why Category A</div></div>
+  <div class="cjk" data-a="zoom" style="--d:1">自强不息</div>
+  <h2 data-a style="--d:2">I will keep striving.</h2>
+  <div class="pillars">
+    <div class="card" data-a style="--d:3"><div class="row"><div class="seal" style="width:70px;height:70px;font-size:42px">学</div><b>A scholar</b></div><p>Highest marks in my major's department · HSK 3, 250 / 300, within a year</p></div>
+    <div class="card" data-a style="--d:4"><div class="row"><div class="seal" style="width:70px;height:70px;font-size:42px">艺</div><b>An artist</b></div><p>Provincial award for Excellent Calligraphy Work · original research under review</p></div>
+    <div class="card" data-a style="--d:5"><div class="row"><div class="seal" style="width:70px;height:70px;font-size:42px">行</div><b>A host and helper</b></div><p>Hosted Chinese events · Service Award for assisting SIE · class monitor and volunteer</p></div>
+  </div>
+  <div data-a style="--d:6;font:700 48px var(--head);margin-top:50px">谢谢各位老师 · Thank you</div>
+</section>
+</div>
+
+<div id="bar"></div>
+<div id="notes"></div>
+<div id="hud"><button id="bN" title="Speaker notes (N)">Notes</button><button id="bF" title="Fullscreen (F)">Fullscreen</button><button id="bP" title="Previous (←)">‹</button><button id="bX" title="Next (→)">›</button></div>
+
+<script>
+const NOTES=[
+"Greet the committee. I am Jubair Md Ariful Islam, Chinese name 王子, master's candidate in International Business, class GMIB2501, from Bangladesh. The calligraphy in my hands reads 自强不息, 'strive without rest', the spirit of my year. I will cover my academic achievements, other accomplishments, and activities.",
+"In one slide: academically I moved from Category B to Category A and passed HSK 3 within a year. Beyond class I earned a provincial calligraphy award and completed original research. In activities I hosted, volunteered and received a Service Award.",
+"In my first year I was awarded Category B. After the annual review, the University awarded me Category A. Reasons: highest marks in my major in the department, helping teachers, volunteering in university programs, and hosting Chinese events.",
+"HSK Level 3 within a year: 250 out of 300, pass mark 180. Listening 95 and Reading 94 are strongest; Writing at 61 is where I am improving. Speaking was Elementary level, 70, pass mark 60.",
+"I contributed to a completed, original paper on Chinese mining FDI in Zambia, 2000 to 2024. It is under peer review at International Studies of Economics and not yet published, so I describe the topic and status only.",
+"In Jiangsu's 2025 'Read Jiangsu' contest for international students, my work 《留子读“苏”》 was honored as Excellent Calligraphy Work. I keep practising, including the SIE calligraphy class. The piece in my hands reads 自强不息.",
+"I hosted the Mid-Autumn Festival on 29 September 2025 and other Chinese events. Hosting helped me practise Chinese and build confidence. At the New Year celebration I wrote my own 福, fortune.",
+"On the 2026 admission day I assisted the School of International Education: I helped teachers, made check-in easier and more comfortable for new students, and guided them through each step. I received a Service Award.",
+"I volunteered with the English language club and helped Chinese students improve their spoken English in a simpler way, and it worked. I also helped international students understand Chinese culture.",
+"A tour of the year, from class monitor and the Mid-Autumn Festival to HSK 3 and the 2026 admission day. I was also elected Vice President of the Student Council Academic Department in November 2025.",
+"I am a scholar, an artist, and a host and helper. I respectfully ask the committee to consider my Category A scholarship. I will keep striving without rest. Thank you, 谢谢."];
+const stage=document.getElementById('stage'),slides=[...document.querySelectorAll('.slide')],bar=document.getElementById('bar'),notes=document.getElementById('notes');
+let i=0;
+function fit(){const s=Math.min(innerWidth/1920,innerHeight/1080);stage.style.transform=`translate(-50%,-50%) scale(${s})`}
+function countUp(el){const to=+el.dataset.count;if(!to)return;let t0;const d=1400;(function f(t){t0??=t;const p=Math.min((t-t0)/d,1);el.textContent=Math.round(to*(1-Math.pow(1-p,3)));p<1&&requestAnimationFrame(f)})(performance.now())}
+function go(n,push=true){n=Math.max(0,Math.min(slides.length-1,n));slides.forEach((s,k)=>s.classList.toggle('active',k===n));i=n;
+ bar.style.width=((n+1)/slides.length*100)+'%';notes.textContent=NOTES[n]||'';
+ slides[n].querySelectorAll('[data-count]:not([data-plain])').forEach(e=>setTimeout(()=>countUp(e),500));
+ if(push)history.replaceState(null,'','#'+(n+1))}
+addEventListener('resize',fit);fit();
+addEventListener('keydown',e=>{const k=e.key;
+ if(['ArrowRight','PageDown',' ','Enter'].includes(k)){e.preventDefault();go(i+1)}
+ else if(['ArrowLeft','PageUp','Backspace'].includes(k)){e.preventDefault();go(i-1)}
+ else if(k==='Home')go(0);else if(k==='End')go(slides.length-1);
+ else if(k==='f'||k==='F')fs();else if(k==='n'||k==='N')notes.classList.toggle('on')});
+function fs(){document.fullscreenElement?document.exitFullscreen():document.documentElement.requestFullscreen?.()}
+document.getElementById('bF').onclick=fs;document.getElementById('bN').onclick=()=>notes.classList.toggle('on');
+document.getElementById('bP').onclick=()=>go(i-1);document.getElementById('bX').onclick=()=>go(i+1);
+let x0=null;addEventListener('touchstart',e=>x0=e.touches[0].clientX,{passive:true});
+addEventListener('touchend',e=>{if(x0==null)return;const d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>50)go(i+(d<0?1:-1));x0=null});
+addEventListener('click',e=>{if(e.target.closest('#hud'))return;go(i+(e.clientX<innerWidth*.2?-1:1))});
+addEventListener('hashchange',()=>go((parseInt(location.hash.slice(1))||1)-1,false));
+go((parseInt(location.hash.slice(1))||1)-1,false);
+</script>
+</body>
+</html>

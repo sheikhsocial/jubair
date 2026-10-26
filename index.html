@@ -42,7 +42,7 @@ h2{font:700 66px/1.1 var(--head);margin:34px 0 34px}
 .cap{font-size:21px;font-style:italic;color:var(--muted);margin-top:12px}
 ul.b{list-style:none;font-size:30px;line-height:1.5}ul.b li::before{content:"";display:inline-block;width:11px;height:11px;border-radius:50%;background:var(--red);margin-right:18px}
 /* title slide */
-#s1 .pic{position:absolute;right:0;top:0;width:785px;height:1080px;border:0}
+#s1 .pic{position:absolute;right:0;top:0;width:720px;height:1080px;border:0}
 #s1 .pic::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--ink),transparent 28%)}
 #s1 .cjk{font:900 210px/1 var(--cjk);color:var(--gold);margin-top:80px;letter-spacing:.04em;text-shadow:0 0 60px #e0b25a40}
 #s1 h1{font:700 100px/1.1 var(--head)}
@@ -68,8 +68,18 @@ ul.b{list-style:none;font-size:30px;line-height:1.5}ul.b li::before{content:"";d
 .active .bars .f{animation:fill 1.6s cubic-bezier(.2,.8,.2,1) forwards;animation-delay:calc(var(--d)*.2s + 1s)}
 @keyframes fill{to{width:var(--w)}}
 /* research */
-.res{display:grid;grid-template-columns:1.1fr 1fr;gap:70px}
+.res{display:grid;grid-template-columns:1.1fr 1fr;gap:50px}
 .res h3{font:700 54px/1.2 var(--head);margin:34px 0 24px}
+.paper-list{display:grid;grid-template-rows:1fr 1fr;gap:24px;height:650px}
+.paper{padding:28px 34px}
+.paper h3{font-size:38px!important;line-height:1.12!important;margin:18px 0 12px!important}
+.paper .pill{font-size:16px;padding:7px 20px}
+.paper .paper-zh{font:24px/1.35 var(--cjk);color:var(--gold)}
+.paper .cap{font-size:20px;line-height:1.35;margin-top:12px}
+.research-focus{padding-top:4px}
+.research-focus .eyebrow{line-height:1.4}
+.research-focus ul.b{font-size:29px;line-height:1.45}
+.research-focus li{margin:28px 0}
 /* generic photo grids */
 .fix{position:absolute}
 /* timeline */
@@ -118,7 +128,7 @@ body:hover #hud{opacity:.85}
       <ul class="b"><li>Calligraphy award, Jiangsu</li><li>Working on Research paper</li><li>Still practising the brush</li></ul></div>
     <div class="card" data-a style="--d:4"><div class="row"><div class="seal" style="width:70px;height:70px;font-size:42px">行</div><div class="kick" style="font-size:20px">Activities</div></div>
       <div class="big" style="font-size:66px">Service Award</div>
-      <ul class="b"><li>Hosted Chinese festivals</li><li>Assisted SIE on admission day</li><li>Class monitor · Head of Academic Department @ Student Council of SIE</li></ul></div>
+      <ul class="b"><li>Hosted Chinese festivals</li><li>Assisted SIE on admission day</li><li>Class monitor</li><li>Head of Academic Department under Student Council</li></ul></div>
   </div>
 </section>
 
@@ -168,18 +178,24 @@ body:hover #hud{opacity:.85}
   <div class="top" data-a><div class="seal">研</div><div class="kick">2 · Research &amp; accomplishments</div></div>
   <h2 data-a style="--d:1">Research beyond the classroom</h2>
   <div class="res">
-    <div class="card" style="height:650px;padding:50px" data-a="left" style="--d:2">
-      <span class="pill">UNDER PEER REVIEW</span>
-      <h3>Chinese Mining Foreign Direct Investment in Zambia, 2000–2024</h3>
-      <p class="gold" style="font:30px var(--cjk)">中国在赞比亚采矿业的外国直接投资（2000—2024）</p>
-      <p class="cap" style="font-size:25px;margin-top:40px">Submitted to International Studies of Economics · completed original research · not yet published</p>
+    <div class="paper-list">
+      <div class="card paper" data-a="left" style="--d:2">
+        <span class="pill">JUBAIR'S RESEARCH · IN PROGRESS</span>
+        <h3>China's Agricultural Exports to Bangladesh in the Belt and Road Era: Evidence from a Product-Category Supplier Panel, 2008-2023</h3>
+      </div>
+      <div class="card paper" data-a="left" style="--d:3">
+        <span class="pill">CO-AUTHORED RESEARCH</span>
+        <h3>Chinese Mining Foreign Direct Investment in Zambia, 2000–2024</h3>
+        <p class="paper-zh">中国在赞比亚采矿业的外国直接投资（2000—2024）</p>
+        <p class="cap">Submitted to International Studies of Economics · completed original research · not yet published</p>
+      </div>
     </div>
-    <div>
-      <div class="eyebrow" data-a style="--d:2">WHAT THE PAPER EXAMINES</div>
-      <div class="row" data-a="right" style="--d:3;margin:34px 0"><div class="disc">周</div><div><b>Commodity cycles</b><span>How price swings shape investment</span></div></div>
-      <div class="row" data-a="right" style="--d:4;margin:34px 0"><div class="disc">路</div><div><b>Belt and Road effects</b><span>The influence of the BRI</span></div></div>
-      <div class="row" data-a="right" style="--d:5;margin:34px 0"><div class="disc">制</div><div><b>Institutional determinants</b><span>Rules and governance that attract capital</span></div></div>
-      <div class="row" data-a="right" style="--d:6;margin:34px 0"><div class="disc">转</div><div><b>From state-owned to private</b><span>The shift in who invests</span></div></div>
+    <div class="research-focus" data-a="right" style="--d:3">
+      <div class="eyebrow">WHAT THE BANGLADESH PAPER EXAMINES</div>
+      <ul class="b">
+        <li>Whether China’s post-2013/BRI exports to Bangladesh rose relative to India, Thailand, Malaysia, and Vietnam.</li>
+        <li>Four product categories: fertilizers, agricultural machinery, seeds, and rice (2008–2023 panel).</li>
+      </ul>
     </div>
   </div>
 </section>
@@ -201,10 +217,10 @@ body:hover #hud{opacity:.85}
   <div class="top" data-a><div class="seal">主</div><div class="kick">3 · Activities · Voice</div></div>
   <h2 data-a style="--d:1">A voice for Chinese celebrations</h2>
   <div class="ph fix" data-a="left" style="--d:2;left:90px;top:330px;width:900px;height:600px"><img src="assets/img/host_hero.jpg" alt="Co-hosting the Mid-Autumn Festival"></div>
-  <div class="cap fix" data-a style="--d:3;left:90px;top:945px">Co-hosting the Mid-Autumn Festival, 29 Sep 2025</div>
+  <div class="cap fix" data-a style="--d:3;left:90px;top:945px">Co-hosting the Mid-Autumn Festival</div>
   <div class="ph fix" data-a="zoom" style="--d:3;left:1040px;top:330px;width:390px;height:390px"><img src="assets/img/host_stage.jpg" alt="Hosting on stage"></div>
   <div class="ph fix" data-a="zoom" style="--d:4;left:1440px;top:330px;width:390px;height:390px"><img src="assets/img/host_fu.jpg" alt="New Year with the 福 character"></div>
-  <ul class="b fix" data-a style="--d:5;left:1040px;top:760px;width:790px"><li>Mid-Autumn Festival host</li><li>Hosted Chinese cultural events</li><li>New Year, 29 Dec 2025: my own 福</li></ul>
+  <ul class="b fix" data-a style="--d:5;left:1040px;top:760px;width:790px"><li>Mid-Autumn Festival host</li><li>Hosted Chinese cultural events</li><li>New Year Celebration Festival</li></ul>
 </section>
 
 <!-- 8 SERVICE -->
@@ -276,12 +292,12 @@ body:hover #hud{opacity:.85}
 <script>
 const NOTES=[
 "Greet the committee. I am Jubair Md Ariful Islam, Chinese name 王子, master's candidate in International Business, class GMIB2501, from Bangladesh. The calligraphy in my hands reads 自强不息, 'strive without rest', the spirit of my year. I will cover my academic achievements, other accomplishments, and activities.",
-"In one slide: academically I moved from Category B to Category A and passed HSK 3 within a year. Beyond class I earned a provincial calligraphy award and completed original research. In activities I hosted, volunteered and received a Service Award.",
+"In one slide: academically I moved from Category B to Category A and earned the highest marks in my major, with HSK 3 at 250 out of 300. I received a Jiangsu provincial calligraphy award and am working on a research paper. In activities I hosted Chinese festivals, assisted SIE on admission day, served as class monitor, and headed the Academic Department under the Student Council.",
 "In my first year I was awarded Category B. After the annual review, the University awarded me Category A. Reasons: highest marks in my major in the department, helping teachers, volunteering in university programs, and hosting Chinese events.",
 "HSK Level 3 within a year: 250 out of 300, pass mark 180. Listening 95 and Reading 94 are strongest; Writing at 61 is where I am improving. Speaking was Elementary level, 70, pass mark 60.",
-"I contributed to a completed, original paper on Chinese mining FDI in Zambia, 2000 to 2024. It is under peer review at International Studies of Economics and not yet published, so I describe the topic and status only.",
+"My research in progress examines China's agricultural exports to Bangladesh in the Belt and Road era, using a product-category supplier panel from 2008 to 2023. It asks whether post-2013/BRI exports rose relative to India, Thailand, Malaysia, and Vietnam across fertilizers, agricultural machinery, seeds, and rice. I am also a co-author of completed original research on Chinese mining FDI in Zambia, 2000 to 2024, submitted to International Studies of Economics and not yet published.",
 "In Jiangsu's 2025 'Read Jiangsu' contest for international students, my work 《留子读“苏”》 was honored as Excellent Calligraphy Work. I keep practising, including the SIE calligraphy class. The piece in my hands reads 自强不息.",
-"I hosted the Mid-Autumn Festival on 29 September 2025 and other Chinese events. Hosting helped me practise Chinese and build confidence. At the New Year celebration I wrote my own 福, fortune.",
+"I hosted the Mid-Autumn Festival and other Chinese events, including the New Year Celebration Festival. Hosting helped me practise Chinese and build confidence.",
 "On the 2026 admission day I assisted the School of International Education: I helped teachers, made check-in easier and more comfortable for new students, and guided them through each step. I received a Service Award.",
 "I volunteered with the English language club and helped Chinese students improve their spoken English in a simpler way, and it worked. I also helped international students understand Chinese culture.",
 "A tour of the year, from class monitor and the Mid-Autumn Festival to HSK 3 and the 2026 admission day. I was also elected Vice President of the Student Council Academic Department in November 2025.",
